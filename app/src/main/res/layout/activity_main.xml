@@ -28,5 +28,13 @@
         android:layout_marginTop="60dp"
         android:text="GENERATE QR"/>
 
+    <Button
+        android:id="@+id/maps_btn"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:layout_centerHorizontal="true"
+        android:text="Maps Test" />
+
 
 </RelativeLayout>

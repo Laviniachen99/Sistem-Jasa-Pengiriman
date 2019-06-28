@@ -10,6 +10,7 @@ import android.widget.Button;
 public class MainActivity extends AppCompatActivity {
     private Button read_btn;
     private Button  gen_btn;
+    private Button maps_btn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,6 +18,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         read_btn = (Button) findViewById(R.id.read_btn);
         gen_btn = (Button) findViewById(R.id.gen_btn);
+        maps_btn = (Button) findViewById(R.id.maps_btn);
         read_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -31,6 +33,12 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent2);
             }
         });
-        
+        maps_btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent3 = new Intent(MainActivity.this,MapsActivity.class);
+                startActivity(intent3);
+            }
+        });
     }
 }
